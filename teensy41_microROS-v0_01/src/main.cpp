@@ -278,6 +278,8 @@ void setup() {
       delay(500);
   }
 
+  rmw_uros_sync_session(1000);
+
   rclc_node_init_default(&node, "base_mcu_node", ROBOT_NAMESPACE, &support);
 
   // 1. Joint States
